@@ -6,117 +6,85 @@
             content="text/html; charset=windows-1252"
         />
 
-        <link
-            href="https://fonts.googleapis.com/css?family=Ubuntu"
-            rel="stylesheet"
-        />
-        <!-- <style>body {font-family:arial; font-size:small; background:#eeeeee}</style>  -->
-
         <style>
-            td {
-                vertical-align: top;
-                font-family: arial;
-                font-size: small;
-                background: #eeeeee;
+            * {
+                box-sizing: border-box;
             }
 
             body {
-                background: #fff;
-                font-family: "Ubuntu", sans-serif;
-                overflow-x: hidden;
-                padding: 0;
                 margin: 0;
             }
-
+            .flex-button-container {
+                display: flex;
+                flex-direction: column;
+                margin: 6px;
+            }
             .button {
-                position: relative;
-                width: 190px;
-                display: block;
-                background: #eee;
-                padding: 5px;
-                border-bottom: 1px solid #ccc;
+                margin-bottom: 6px;
+                padding: 9px;
+                background-color: #42273b;
+                border-radius: 5px;
+                transition: 0.2s;
                 text-decoration: none;
-                color: #333;
-                transition: all 0.3s ease-in-out;
-            }
-            .button__text {
-                font-size: 14px;
-            }
-
-            .button__description {
-                font-size: 12px;
-                margin-top: 3px;
-            }
-
-            .button::after {
-                content: "";
-                position: absolute;
-                top: 16px;
-                right: 10px;
-                height: 8px;
-                width: 8px;
-                transform: rotate(45deg);
-                border-right: 2px solid #999;
-                border-top: 2px solid #999;
-                transition: all 0.3s ease-in-out;
             }
 
             .button:hover {
-                background: #fff;
-                cursor: pointer;
+                background-color: #5C475A;
             }
 
-            .button:hover::after {
-                right: 15px;
+            .button * {
+                transition: .3s ease-out;
+            }
+
+            .button:hover * {
+                transform: translateX(7px);
+            }
+
+            .button .button-text {
+                color: #daf7dc;
+                font-weight: bold;
+                font-family: "Trebuchet MS", "Lucida Sans Unicode",
+                    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+                font-size: 13pt;
+            }
+
+            .button .button-description {
+                font-size: 8pt;
+                font-style: italic;
+                color: #978494;
             }
         </style>
         <script>
-            window.onload = function () {
-                 console.warn('Ich bin ein Hacker Beep Boop');
-             }
+            window.onload = function() {
+                console.warn("Ich bin ein Hacker Beep Boop");
+            };
         </script>
     </head>
     <body>
-        <table
-            width="100%"
-            height="100%"
-            border="0"
-            cellpadding="0"
-            cellspacing="0"
-        >
-            <tbody>
-                <tr>
-                    <td width="200" style="padding-top:5px;">
-                        <!-- dieser Block wird am Ende des Semesters wichtig sein, bitte nicht l�schen
+        <!-- dieser Block wird am Ende des Semesters wichtig sein, bitte nicht l�schen
 						Titel<br /></br />
 						<a href="Anforderungsliste.htm" target="_blank">Anforderungsliste (01.01.2111)</a><br />
 						<a href="link" target="_blank">Kurzkonzept (01.01.2111)</a><br />
 						<a href="link" target="_blank">Applikation.zip (01.01.2111)</a><br />
 						<a href="link" target="_blank">Applikation.swf (01.01.2111)</a><br />
-						-->
-
-                        <a
-                            class="button"
-                            href="https://github.com/VADS/MIB4-Softwaredesign"
-                            target="_blank"
-                        >
-                            <div class="button__text">#0 - Zum Repository</div>
-                            <div class="button__description">01.04.2020</div>
-                        </a>
-                        <a
-                            class="button"
-                            href="https://vads.github.io/MIB4-Softwaredesign/steckbrief"
-                            target="_blank"
-                        >
-                            <div class="button__text">#1 - Zum Steckbrief</div>
-                            <div class="button__description">02.04.2020</div>
-                        </a>
-                    </td>
-                    <td>
-                        <!-- No questions so far... -->
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+                        -->
+        <div class="flex-button-container">
+            <a
+                class="button"
+                href="https://github.com/VADS/MIB4-Softwaredesign"
+                target="_blank"
+            >
+                <div class="button-text">Repository</div>
+                <div class="button-description">01.04.2020</div>
+            </a>
+            <a
+                class="button"
+                href="https://vads.github.io/MIB4-Softwaredesign/steckbrief"
+                target="_blank"
+            >
+                <div class="button-text">Steckbrief</div>
+                <div class="button-description">02.04.2020</div>
+            </a>
+        </div>
     </body>
 </html>
