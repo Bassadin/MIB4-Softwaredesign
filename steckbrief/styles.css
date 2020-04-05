@@ -64,6 +64,45 @@ html, body {
     margin: 0 0 0 20px;
 }
 
-#personal-data ul li {
-    margin: 5px 0;
+.card-content-container>ul {
+    padding-left: 0;
+    width: 80%;
+    margin: 0 auto;
 }
+
+/* List style */
+
+ul {
+    list-style: none;
+    margin: 0;
+    /* padding-left: 0; */
+}
+
+ul li {
+    margin-bottom: 5px;
+    padding: 0;
+    border-left: 7px black solid;
+}
+
+li * {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    display: inline-block;
+    background-color: #DDDDDD;
+    transition: background-color .3s;
+}
+
+li a[href] {
+    background-color: aquamarine;
+    text-decoration: none;
+    color: inherit;
+}
+
+li *:hover {
+    background-color: lightsalmon !important;
+}
+
+/* #personal-data ul li {
+    margin: 5px 0;
+} */
