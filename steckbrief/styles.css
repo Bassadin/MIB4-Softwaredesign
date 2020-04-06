@@ -99,7 +99,7 @@ li a[href] {
     color: inherit;
 }
 
-li *:hover {
+li a[href]:hover {
     background-color: #561D25 !important;
     color: #CE8147 !important;
 }
