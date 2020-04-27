@@ -1,4 +1,4 @@
 "use strict";
 exports.__esModule = true;
-var message = "Welcome Back";
+var message = "Hello World";
 console.log(message);
