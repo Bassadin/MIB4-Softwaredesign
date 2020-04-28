@@ -1,5 +1,7 @@
+"use strict";
 window.onload = function () {
-    var message = "Hello World";
+    let message = "Hello World!";
     this.console.log(message);
-    document.getElementById('text').innerHTML = message;
+    document.getElementById("text").innerHTML = message;
 };
+//# sourceMappingURL=main.js.map

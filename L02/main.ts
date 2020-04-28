@@ -1,6 +1,5 @@
 window.onload = function () {
-    let message : string = "Hello World";
+    let message: string = "Hello World!";
     this.console.log(message);
-    document.getElementById('text').innerHTML = message;
-}
-
+    document.getElementById("text").innerHTML = message;
+};
