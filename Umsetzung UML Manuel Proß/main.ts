@@ -2,7 +2,6 @@
 //https://manuel-pross.github.io/SofDesSS2020/L01/Sequenzdiagramm_L01.pdf
 
 namespace Umsetzung_UML {
-    // let sentence: string = prompt("Satz eingeben", "Die Maus frisst Käse");
     let sentence: string = "Die Maus frisst Käse";
 
     twistWordsOnly(sentence);

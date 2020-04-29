@@ -5,7 +5,6 @@ var Umsetzung_UML;
 //Umsetzung UML-PDF von Manuel Proß
 //https://manuel-pross.github.io/SofDesSS2020/L01/Sequenzdiagramm_L01.pdf
 (function (Umsetzung_UML) {
-    // let sentence: string = prompt("Satz eingeben", "Die Maus frisst Käse");
     let sentence = "Die Maus frisst Käse";
     twistWordsOnly(sentence);
     twistSentenceOnly(sentence);
