@@ -2,7 +2,7 @@
 //https://manuel-pross.github.io/SofDesSS2020/L01/Sequenzdiagramm_L01.pdf
 
 namespace Umsetzung_UML {
-    let sentence: string = "Die Maus frisst Käse";
+    let sentence: string = prompt("Will your sentence into existence:", "Die Maus frisst Käse");
 
     twistWordsOnly(sentence);
     twistSentenceOnly(sentence);
