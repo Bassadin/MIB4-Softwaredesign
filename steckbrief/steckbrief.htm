@@ -32,23 +32,20 @@
             }
 
             .button:hover {
-                background-color: #5C475A;
-            }
-
-            .button * {
-                transition: .3s ease-out;
-            }
-
-            .button:hover * {
-                transform: translateX(5px);
+                background-color: #5c475a;
             }
 
             .button .button-text {
+                transition: 0.3s ease-out;
                 color: #daf7dc;
                 font-weight: bold;
                 font-family: "Trebuchet MS", "Lucida Sans Unicode",
                     "Lucida Grande", "Lucida Sans", Arial, sans-serif;
                 font-size: 12pt;
+            }
+
+            .button:hover .button-text {
+                transform: translateX(5px);
             }
 
             .button .button-description {
