@@ -17,6 +17,7 @@
             .flex-button-container {
                 display: flex;
                 flex-direction: column;
+                justify-items: center;
                 margin: 2px;
             }
             .button {
@@ -27,7 +28,7 @@
                 transition: 0.2s;
                 text-decoration: none;
                 width: 80%;
-                text-align: center;
+                position: relative;
             }
 
             .button:hover {
@@ -51,6 +52,9 @@
             }
 
             .button .button-description {
+                position: absolute;
+                top: 2px;
+                right: calc(100% + 3px);
                 font-size: 6pt;
                 font-style: italic;
                 color: #978494;
