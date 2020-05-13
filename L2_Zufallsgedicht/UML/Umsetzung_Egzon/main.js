@@ -1,9 +1,9 @@
 "use strict";
-//Umsetzung UML-PDF von Manuel Proß
-//https://manuel-pross.github.io/SofDesSS2020/L01/Sequenzdiagramm_L01.pdf
+//Umsetzung UML-PDF von Egzon Demaj
+//https://exolicious.github.io/SoftDesSS2020/Uml/egzon_demaj_uml_zufallsgedicht.pdf
 var Umsetzung_UML_Zufallsgedicht;
-//Umsetzung UML-PDF von Manuel Proß
-//https://manuel-pross.github.io/SofDesSS2020/L01/Sequenzdiagramm_L01.pdf
+//Umsetzung UML-PDF von Egzon Demaj
+//https://exolicious.github.io/SoftDesSS2020/Uml/egzon_demaj_uml_zufallsgedicht.pdf
 (function (Umsetzung_UML_Zufallsgedicht) {
     let subjekte = ["Harry", "zerstört", "Snape"];
     let verben = ["Hermine", "lernt mit", "McGonagall"];
