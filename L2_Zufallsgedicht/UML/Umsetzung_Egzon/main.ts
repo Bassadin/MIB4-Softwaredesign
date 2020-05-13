@@ -1,8 +1,7 @@
 //Umsetzung UML-PDF von Egzon Demaj
 //https://exolicious.github.io/SoftDesSS2020/Uml/egzon_demaj_uml_zufallsgedicht.pdf
 
-//Glaub das sollte kein snake_case sein
-namespace Umsetzung_UML_Zufallsgedicht {
+namespace UmsetzungUMLZufallsgedicht {
     let subjekte: string[] = ["Harry", "zerstört", "Snape"];
     let verben: string[] = ["Hermine", "lernt mit", "McGonagall"];
     let objekte: string[] = ["Dumbledore", "liebt", "Ron"];
