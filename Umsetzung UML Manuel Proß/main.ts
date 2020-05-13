@@ -1,6 +1,7 @@
 //Umsetzung UML-PDF von Manuel Proß
 //https://manuel-pross.github.io/SofDesSS2020/L01/Sequenzdiagramm_L01.pdf
 
+//Andere naming convention (PascalCase)
 namespace Umsetzung_UML {
     let sentence: string = prompt("Will your sentence into existence:", "Die Maus frisst Käse");
 
@@ -8,6 +9,7 @@ namespace Umsetzung_UML {
     twistSentenceOnly(sentence);
     twistSentenceAndWords(sentence);
 
+    // Formal parameters sollen mit _ beginnen, also _ vor allen Übergabeparametern
     function twistSentenceAndWords(sentence: String) {
         let twisted: string = "";
         let i: number = sentence.length - 1;
@@ -19,6 +21,7 @@ namespace Umsetzung_UML {
         console.log(twisted);
     }
 
+    // Hier auch die convention für formal parameters
     function twistWordsOnly(sentence: String) {
         let words: string[] = [];
         words = sentence.split(" ");
@@ -37,6 +40,7 @@ namespace Umsetzung_UML {
         console.log(twisted);
     }
 
+    // You know
     function twistSentenceOnly(sentence: String) {
         let words: string[] = [];
         words = sentence.split(" ");
