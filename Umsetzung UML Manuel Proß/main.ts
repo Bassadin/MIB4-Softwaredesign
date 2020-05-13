@@ -1,27 +1,27 @@
 //Umsetzung UML-PDF von Manuel Proß
 //https://manuel-pross.github.io/SofDesSS2020/L01/Sequenzdiagramm_L01.pdf
 
-namespace Umsetzung_UML {
+namespace UmsetzungUML {
     let sentence: string = prompt("Will your sentence into existence:", "Die Maus frisst Käse");
 
     twistWordsOnly(sentence);
     twistSentenceOnly(sentence);
     twistSentenceAndWords(sentence);
 
-    function twistSentenceAndWords(sentence: String) {
+    function twistSentenceAndWords(_sentence: String) {
         let twisted: string = "";
-        let i: number = sentence.length - 1;
+        let i: number = _sentence.length - 1;
 
         for (i; i >= 0; i--) {
-            twisted += sentence[i];
+            twisted += _sentence[i];
         }
 
         console.log(twisted);
     }
 
-    function twistWordsOnly(sentence: String) {
+    function twistWordsOnly(_sentence: String) {
         let words: string[] = [];
-        words = sentence.split(" ");
+        words = _sentence.split(" ");
         let twisted: string = "";
 
         for (let i: number = 0; i < words.length; i++) {
@@ -37,9 +37,9 @@ namespace Umsetzung_UML {
         console.log(twisted);
     }
 
-    function twistSentenceOnly(sentence: String) {
+    function twistSentenceOnly(_sentence: String) {
         let words: string[] = [];
-        words = sentence.split(" ");
+        words = _sentence.split(" ");
         let twisted: string = "";
         let i: number = words.length - 1;
 
