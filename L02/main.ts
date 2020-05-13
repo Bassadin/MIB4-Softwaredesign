@@ -1,3 +1,4 @@
+// Namespace in PascalCase
 namespace L02_HelloWorld {
     window.onload = function () {
         let message: string = "Hello World!";
